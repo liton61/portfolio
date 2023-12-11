@@ -26,7 +26,7 @@ const Navbar = () => {
                             className={({ isActive, isPending }) =>
                                 isPending ? "pending" : isActive ? "active" : ""}>Home</NavLink></li>
                         <li className="mx-2 font-medium"><NavLink
-                            to="/addJob"
+                            to="/about"
                             className={({ isActive, isPending }) =>
                                 isPending ? "pending" : isActive ? "active" : ""}>About</NavLink></li>
                         <li className="mx-2 font-medium">

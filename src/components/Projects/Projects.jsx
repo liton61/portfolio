@@ -3,21 +3,21 @@
 const Projects = () => {
     const projects = [
         {
-            title: 'Project 1',
+            title: 'Vector Gym',
             image: 'https://i.postimg.cc/Pqw61Jpz/car.webp',
             description: 'A Single Page Application Created With React. Where User Can Authenticated And Apply For A Social Work User Can Pick The Volunteering Subject According To Their Choice. And Can Fix A Voluntary Service By Using Their Google Account. Admin Can Add Or Delete Events And Modify The Volunteer List. Google Sign In And Dashboard Was Included In This Project',
         },
         {
-            title: 'Project 2',
+            title: 'Flex Jobs',
             image: 'https://i.postimg.cc/Pqw61Jpz/car.webp',
             description: 'A Single Page Application Created With React. Where User Can Authenticated And Apply For A Social Work User Can Pick The Volunteering Subject According To Their Choice. And Can Fix A Voluntary Service By Using Their Google Account. Admin Can Add Or Delete Events And Modify The Volunteer List. Google Sign In And Dashboard Was Included In This Project',
         },
         {
-            title: 'Project 3',
+            title: 'Automotive Zone',
             image: 'https://i.postimg.cc/Pqw61Jpz/car.webp',
             description: 'A Single Page Application Created With React. Where User Can Authenticated And Apply For A Social Work User Can Pick The Volunteering Subject According To Their Choice. And Can Fix A Voluntary Service By Using Their Google Account. Admin Can Add Or Delete Events And Modify The Volunteer List. Google Sign In And Dashboard Was Included In This Project',
         },
-        // Add more project data as needed
+        
     ];
 
     return (
@@ -31,7 +31,7 @@ const Projects = () => {
                                 <img src={project.image} alt={project.title} className="w-full rounded-lg mb-4 md:mb-0" />
                             </div>
                             <div className="w-full md:w-1/2 border border-gray-300 rounded-lg p-4">
-                                <h3 className="text-2xl font-bold mb-4">{project.title}</h3>
+                                <h3 className="text-2xl font-bold mb-4 text-center">{project.title}</h3>
                                 <p className="text-justify">{project.description}</p>
                                 <div className="mt-5 flex flex-wrap">
                                     <strong className='bg-green-400 px-3 py-2 rounded my-2 md:mb-0 md:mr-2 mr-2'>Tailwind</strong>

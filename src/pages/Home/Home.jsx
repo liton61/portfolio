@@ -1,6 +1,6 @@
 import Banner from "../../components/Banner/Banner";
 // import Contact from "../../components/Contact/Contact";
-// import Projects from "../../components/Projects/Projects";
+import Projects from "../../components/Projects/Projects";
 import Skills from "../../components/Skills/Skills";
 import SoftSkills from "../../components/SoftSkills/SoftSkills";
 
@@ -11,7 +11,7 @@ const Home = () => {
             <Banner></Banner>
             <Skills></Skills>
             <SoftSkills></SoftSkills>
-            {/* <Projects></Projects> */}
+            <Projects></Projects>
             {/* <Contact></Contact> */}
         </div>
     );

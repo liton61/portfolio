@@ -11,6 +11,7 @@ const Skills = () => {
         { name: 'Node.js', logo: 'https://i.postimg.cc/TwTPy4pG/node.png' },
         { name: 'Express.js', logo: 'https://i.postimg.cc/rpDsXPKw/express.png' },
         { name: 'MongoDB', logo: 'https://i.postimg.cc/bv4Jz9tH/mongodb.png' },
+        { name: 'Figma', logo: 'https://i.postimg.cc/j2G0YGrT/figma.png' },
     ];
 
     return (

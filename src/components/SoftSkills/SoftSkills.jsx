@@ -5,7 +5,7 @@ const SoftSkills = () => {
     { name: 'Communication', level: 80 },
     { name: 'Teamwork', level: 85 },
     { name: 'Leadership', level: 90 },
-    { name: 'Flexibility', level: 75 },
+    { name: 'Flexibility', level: 80 },
     // Add more soft skills with their corresponding levels (out of 100)
   ];
 

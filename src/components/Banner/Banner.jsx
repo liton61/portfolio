@@ -13,8 +13,11 @@ const Banner = () => {
                     />
                     <h1 className="text-4xl font-bold mb-4 text-center">Hi, I'm Liton Mia</h1>
                     <p className="text-md text-justify">
-                        I am a MERN stack developer passionate about crafting clean, efficient, and scalable web applications. With a solid foundation in MongoDB, Express.js, React.js, and Node.js, I aim to contribute innovative solutions while continuously learning and growing in this dynamic field. My enthusiasm for problem-solving and collaboration drives my ambition to build user-centric, impactful projects.
+                        I am a MERN stack developer passionate about crafting clean, efficient, and scalable web applications. With a solid foundation in MongoDB, Express.js, React.js, and Node.js, I aim to contribute innovative solutions while continuously learning and growing in this dynamic field.
                     </p>
+                    <div className='flex justify-center mt-5'>
+                    <button className='bg-green-400 px-4 py-3 font-medium rounded text-gray-900'>Download Resume <i className="fa-solid fa-download"></i></button>
+                    </div>
                 </div>
             </div>
         </section>

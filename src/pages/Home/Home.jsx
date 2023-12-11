@@ -1,5 +1,5 @@
 import Banner from "../../components/Banner/Banner";
-// import Contact from "../../components/Contact/Contact";
+import Contact from "../../components/Contact/Contact";
 import Projects from "../../components/Projects/Projects";
 import Services from "../../components/Services/Services";
 import Skills from "../../components/Skills/Skills";
@@ -14,7 +14,7 @@ const Home = () => {
             <SoftSkills></SoftSkills>
             <Projects></Projects>
             <Services></Services>
-            {/* <Contact></Contact> */}
+            <Contact></Contact>
         </div>
     );
 };

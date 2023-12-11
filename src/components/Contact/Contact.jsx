@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Swal from 'sweetalert2';
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -16,15 +17,18 @@ const Contact = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Here you can handle form submission, e.g., sending data to backend, etc.
-        console.log(formData); // Replace this with your form submission logic
-        // You might also want to add a form submission success message or redirect the user
+        console.log(formData);
+        Swal.fire({
+            title: "Good job!",
+            text: "You you have successfully submitted !",
+            icon: "success"
+        });
     };
 
     return (
         <section className="bg-gray-900 text-white py-16 px-4">
             <div className="max-w-5xl mx-auto">
-                <h2 className="text-3xl font-bold mb-8">Contact Me</h2>
+                <h2 className="text-3xl font-bold mb-8 border-b-4 border-green-400 w-72 mx-auto text-center pb-2 text-white">Contact Me</h2>
                 <form onSubmit={handleSubmit}>
                     <div className="mb-4">
                         <label htmlFor="name" className="block mb-2 text-lg">Name</label>

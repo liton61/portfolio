@@ -29,7 +29,7 @@ const Contact = () => {
         <section className="bg-gray-900 text-white py-16 px-4">
             <div className="max-w-5xl mx-auto">
                 <h2 className="text-3xl font-bold mb-8 border-b-4 border-green-400 w-72 mx-auto text-center pb-2 text-white">Contact Me</h2>
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit} data-aos="zoom-in" data-aos-duration="2000">
                     <div className="mb-4">
                         <label htmlFor="name" className="block mb-2 text-lg">Name</label>
                         <input

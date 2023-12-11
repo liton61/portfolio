@@ -16,7 +16,7 @@ const SoftSkills = () => {
                     {softSkillsData.map((skill, index) => (
                         <div key={index} className="flex flex-col items-center justify-center">
                             <p className="mb-2">{skill.name}</p>
-                            <div className="bg-gray-300 w-full h-8 rounded-full relative overflow-hidden">
+                            <div className="bg-gray-300 w-full h-8 rounded-full relative overflow-hidden" data-aos="zoom-in" data-aos-duration="2000">
                                 <div
                                     className={`h-full rounded-full bg-gradient-to-r from-green-500 to-gray-500`}
                                     style={{ width: `${skill.level}%` }}

@@ -22,7 +22,7 @@ const Skills = () => {
                     {skillsWithLogos.map((skill, index) => (
                         <div
                             key={index}
-                            className="flex items-center justify-center bg-gray-900 text-white py-7 rounded transition-transform transform hover:scale-110 duration-500"
+                            className="flex items-center justify-center bg-gray-900 text-white py-7 rounded transition-transform transform hover:scale-110 duration-500" data-aos="zoom-in" data-aos-duration="2000"
                         >
                             <img
                                 src={skill.logo}

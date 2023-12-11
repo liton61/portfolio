@@ -30,7 +30,7 @@ const Services = () => {
                 <h2 className="text-3xl font-bold mb-8 border-b-4 border-green-400 w-72 mx-auto text-center pb-2 text-white">Services</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {services.map((service, index) => (
-                        <div key={index} className="bg-white p-3 rounded-lg flex flex-col items-center">
+                        <div key={index} className="bg-white p-3 rounded-lg flex flex-col items-center" data-aos="zoom-in" data-aos-duration="2000">
                             <img src={service.image} alt={service.title} className="w-full h-32 mb-4 rounded-full" />
                             <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
                         </div>

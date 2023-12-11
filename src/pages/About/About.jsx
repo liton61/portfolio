@@ -10,25 +10,25 @@ const About = () => {
                         <img
                             src={img}
                             alt=""
-                            className="w-96 h-auto rounded-lg"
+                            className="w-96 h-auto rounded-lg" data-aos="zoom-in" data-aos-duration="2000"
                         />
                     </div>
                     <div className="md:w-3/4 md:pl-8 text-white">
                         <div>
-                            <h1 className="text-4xl font-bold mb-4 text-center">Hi, I'm Liton Mia</h1>
-                            <p className="text-md text-justify">
+                            <h1 className="text-4xl font-bold mb-4 text-center" data-aos="zoom-in" data-aos-duration="2000">Hi, I'm Liton Mia</h1>
+                            <p className="text-md text-justify" data-aos="zoom-in" data-aos-duration="2000">
                                 I am a MERN stack developer passionate about crafting clean, efficient, and scalable web applications. With a solid foundation in MongoDB, Express.js, React.js, and Node.js, I aim to contribute innovative solutions while continuously learning and growing in this dynamic field.
                             </p>
                         </div>
-                        <div className='mt-5'>
+                        <div className='mt-5' data-aos="zoom-in" data-aos-duration="2000">
                             <h2 className="text-xl font-semibold mb-2">Educational Background</h2>
                             <ul className="list-disc pl-5 mb-4">
                                 <li>Bachelor's Degree in Computer Science & Engineering</li>
                                 <li>Sonargaon University</li>
                             </ul>
                         </div>
-                        <div>
-                            <h2 className="text-xl font-semibold mb-2">Contact Me</h2>
+                        <div data-aos="zoom-in" data-aos-duration="2000">
+                            <h2 className="text-xl font-semibold mb-2 ">Contact Me</h2>
                             <ul className="list-disc pl-5 mb-4">
                                 <li className='font-medium'><i className="fa-solid fa-phone"></i>  01738751356</li>
                                 <li className='font-medium'><i className="fa-solid fa-envelope"></i>  litonofficial61@gmail.com

@@ -34,7 +34,7 @@ const Blogs = () => {
                 {/* <h1 className="text-4xl font-bold mb-8">Blogs</h1> */}
                 <div className="grid gap-6">
                     {blogPosts.map((post) => (
-                        <div key={post.id} className="bg-white p-6 rounded-lg lg:transition-transform transform hover:scale-105">
+                        <div key={post.id} className="bg-white p-6 rounded-lg lg:transition-transform transform hover:scale-105" data-aos="zoom-in" data-aos-duration="2000">
                             <h2 className="text-2xl font-semibold mb-2">{post.title}</h2>
                             <p className="text-gray-500 mb-2">{post.date}</p>
                             <p className="text-justify">{post.content}</p>

@@ -30,9 +30,9 @@ const Projects = () => {
                     {projects.map((project, index) => (
                         <div key={index} className="flex flex-col md:flex-row items-center gap-8">
                             <div className="w-full md:w-1/2">
-                                <img src={project.image} alt={project.title} className="w-full h-80 rounded-lg mb-4 md:mb-0 border-2 border-green-400" />
+                                <img src={project.image} alt={project.title} className="w-full h-80 rounded-lg mb-4 md:mb-0 border-2 border-green-400" data-aos="zoom-in" data-aos-duration="2000" />
                             </div>
-                            <div className="w-full md:w-1/2 border border-green-400 rounded-lg p-4">
+                            <div className="w-full md:w-1/2 border border-green-400 rounded-lg p-4" data-aos="zoom-in" data-aos-duration="2000">
                                 <h3 className="text-2xl font-bold mb-2 text-center">{project.title}</h3>
                                 <p className="text-justify">{project.description}</p>
                                 <div className="mt-3 flex flex-wrap">

@@ -34,9 +34,9 @@ const About = () => {
                                 <li className='font-medium'><i className="fa-solid fa-envelope"></i>  litonofficial61@gmail.com
                                 </li>
                                 <li>
-                                    <a href=""><i className="fab fa-facebook text-2xl mr-3"></i></a>
+                                    <a href="https://www.facebook.com/profile.php?id=100092320843338"><i className="fab fa-facebook text-2xl mr-3"></i></a>
                                     <a href=""><i className="fab fa-linkedin text-2xl mr-3"></i></a>
-                                    <a href=""> <i className="fa-brands fa-github text-2xl"></i></a>
+                                    <a href="https://github.com/liton61"> <i className="fa-brands fa-github text-2xl"></i></a>
                                 </li>
                             </ul>
                         </div>

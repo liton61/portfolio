@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 
 const Navbar = () => {
@@ -12,9 +12,24 @@ const Navbar = () => {
 
                         </div>
                         <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><a>Item 1</a></li>
-                            <li><a>Item 2</a></li>
-                            <li><a>Item 3</a></li>
+                            <li className="mx-2 font-medium"><NavLink
+                                to="/"
+                                className={({ isActive, isPending }) =>
+                                    isPending ? "pending" : isActive ? "active" : ""}>Home</NavLink></li>
+                            <li className="mx-2 font-medium"><NavLink
+                                to="/about"
+                                className={({ isActive, isPending }) =>
+                                    isPending ? "pending" : isActive ? "active" : ""}>About</NavLink></li>
+                            <li className="mx-2 font-medium">
+                                <NavLink
+                                    to="/blogs"
+                                    className={({ isActive, isPending }) =>
+                                        isPending ? "pending" : isActive ? "active" : ""
+                                    }
+                                >
+                                    Blogs
+                                </NavLink>
+                            </li>
                         </ul>
                     </div>
                     <a className="btn btn-ghost text-xl">My Portfolio</a>
@@ -42,7 +57,9 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn">Button</a>
+                    <Link to="/about">
+                        <a className="btn btn-neutral">Hire Me</a>
+                    </Link>
                 </div>
             </div>
         </div>

@@ -29,7 +29,7 @@ const Blogs = () => {
     ];
 
     return (
-        <div className="bg-gray-100 py-16 px-4">
+        <div className="bg-gray-900 py-16 px-4">
             <div className="max-w-3xl mx-auto">
                 {/* <h1 className="text-4xl font-bold mb-8">Blogs</h1> */}
                 <div className="grid gap-6">
@@ -37,7 +37,7 @@ const Blogs = () => {
                         <div key={post.id} className="bg-white p-6 rounded-lg lg:transition-transform transform hover:scale-105">
                             <h2 className="text-2xl font-semibold mb-2">{post.title}</h2>
                             <p className="text-gray-500 mb-2">{post.date}</p>
-                            <p>{post.content}</p>
+                            <p className="text-justify">{post.content}</p>
                         </div>
                     ))}
                 </div>

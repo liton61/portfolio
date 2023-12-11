@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import img from '../../assets/liton.jpg';
 
-const AboutPage = () => {
+const About = () => {
     return (
         <div className="bg-gray-900 py-20 px-4">
             <div className="max-w-5xl mx-auto">
@@ -47,4 +47,4 @@ const AboutPage = () => {
     );
 };
 
-export default AboutPage;
+export default About;

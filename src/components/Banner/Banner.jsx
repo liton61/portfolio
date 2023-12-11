@@ -16,7 +16,7 @@ const Banner = () => {
                         I am a MERN stack developer passionate about crafting clean, efficient, and scalable web applications. With a solid foundation in MongoDB, Express.js, React.js, and Node.js, I aim to contribute innovative solutions while continuously learning and growing in this dynamic field.
                     </p>
                     <div className='flex justify-center mt-5'>
-                    <button className='bg-green-400 px-4 py-3 font-medium rounded text-gray-900'>Download Resume <i className="fa-solid fa-download"></i></button>
+                        <button className='bg-green-400 px-4 py-3 font-medium rounded text-gray-900'>Download Resume <i className="fa-solid fa-download"></i></button>
                     </div>
                 </div>
             </div>

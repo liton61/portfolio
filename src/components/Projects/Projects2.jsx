@@ -1,4 +1,8 @@
 import { Link } from "react-router-dom";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { EffectCoverflow, Pagination } from 'swiper/modules';
+import 'swiper/css/pagination';
+import 'swiper/css';
 
 
 const Projects2 = () => {
@@ -29,7 +33,48 @@ const Projects2 = () => {
                     {projects.map((project, index) => (
                         <div key={index} className="flex flex-col md:flex-row items-center gap-8">
                             <div className="w-full md:w-1/2">
-                                <img src={project.image} alt={project.title} className="w-full h-80 rounded-lg mb-4 md:mb-0 border-2 border-green-400" data-aos="zoom-in" data-aos-duration="2000" />
+                                {/* <img src={project.image} alt={project.title} className="w-full h-80 rounded-lg mb-4 md:mb-0 border-2 border-green-400" data-aos="zoom-in" data-aos-duration="2000" /> */}
+                                <Swiper data-aos="zoom-in" data-aos-duration="2000"
+                                    effect={'coverflow'}
+                                    grabCursor={true}
+                                    centeredSlides={true}
+                                    slidesPerView={'auto'}
+                                    coverflowEffect={{
+                                        rotate: 50,
+                                        stretch: 0,
+                                        depth: 100,
+                                        modifier: 1,
+                                        slideShadows: true,
+                                    }}
+                                    pagination={true}
+                                    modules={[EffectCoverflow, Pagination]}
+                                    className="mySwiper"
+                                >
+                                    <SwiperSlide>
+                                        <img className="h-80 border-2 border-green-400 rounded" src="https://i.postimg.cc/nhnQt93M/02.png" />
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <img className="h-80 border-2 border-green-400 rounded" src="https://i.postimg.cc/CLyPHWBZ/02.png" />
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <img className="h-80 border-2 border-green-400 rounded" src="https://i.postimg.cc/sXQm5c39/03.png" />
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <img className="h-80 border-2 border-green-400 rounded" src="https://i.postimg.cc/W4fSDKc1/04.png" />
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <img className="h-80 border-2 border-green-400 rounded" src="https://i.postimg.cc/xTKsstM6/05.png" />
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <img className="h-80 border-2 border-green-400 rounded" src="https://i.postimg.cc/HLLBkmKN/06.png" />
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <img className="h-80 border-2 border-green-400 rounded" src="https://i.postimg.cc/P5TS0YMT/07.png" />
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <img className="h-80 border-2 border-green-400 rounded" src="https://i.postimg.cc/hts2nvCx/08.png" />
+                                    </SwiperSlide>
+                                </Swiper>
                             </div>
                             <div className="w-full md:w-1/2 border border-green-400 rounded-lg p-4" data-aos="zoom-in" data-aos-duration="2000">
                                 <h3 className="text-2xl font-bold mb-4 text-center">{project.title}</h3>

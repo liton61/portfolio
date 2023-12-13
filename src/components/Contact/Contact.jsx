@@ -1,43 +1,37 @@
-import { useState } from 'react';
+
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
 
 const Contact = () => {
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        message: '',
-    });
-
-    const handleChange = (e) => {
-        setFormData({
-            ...formData,
-            [e.target.name]: e.target.value,
-        });
-    };
-
-    const handleSubmit = (e) => {
+    const form = useRef();
+    const sendEmail = (e) => {
         e.preventDefault();
-        console.log(formData);
-        Swal.fire({
-            title: "Good job!",
-            text: "You you have successfully submitted !",
-            icon: "success"
-        });
+        emailjs.sendForm('service_5rdxana', 'template_b5h3617', form.current, 'aY09R0x-o_CBd4nUQ')
+            .then((result) => {
+                console.log(result.text);
+                form.current.reset();
+                Swal.fire({
+                    title: "Good job!",
+                    text: "You you have successfully submitted !",
+                    icon: "success"
+                });
+            }, (error) => {
+                console.log(error.text);
+            });
     };
 
     return (
         <section className="bg-gray-900 text-white py-16 px-4">
             <div className="max-w-5xl mx-auto">
                 <h2 className="text-3xl font-bold mb-8 border-b-4 border-green-400 w-72 mx-auto text-center pb-2 text-white">Contact Me</h2>
-                <form onSubmit={handleSubmit} data-aos="zoom-in" data-aos-duration="2000">
+                <form ref={form} onSubmit={sendEmail} data-aos="zoom-in" data-aos-duration="2000">
                     <div className="mb-4">
                         <label htmlFor="name" className="block mb-2 text-lg">Name</label>
                         <input
                             type="text"
                             id="name"
-                            name="name"
-                            value={formData.name}
-                            onChange={handleChange}
+                            name="user_name"
                             className="w-full px-4 py-2 rounded-md text-black focus:outline-none"
                             required
                         />
@@ -47,9 +41,7 @@ const Contact = () => {
                         <input
                             type="email"
                             id="email"
-                            name="email"
-                            value={formData.email}
-                            onChange={handleChange}
+                            name="user_email"
                             className="w-full px-4 py-2 rounded-md text-black focus:outline-none"
                             required
                         />
@@ -59,8 +51,6 @@ const Contact = () => {
                         <textarea
                             id="message"
                             name="message"
-                            value={formData.message}
-                            onChange={handleChange}
                             className="w-full px-4 py-2 rounded-md text-black focus:outline-none"
                             rows="5"
                             required

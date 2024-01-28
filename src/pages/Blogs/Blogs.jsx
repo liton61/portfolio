@@ -29,12 +29,12 @@ const Blogs = () => {
     ];
 
     return (
-        <div className="bg-gray-900 py-16 px-4">
-            <div className="max-w-3xl mx-auto">
+        <div className="bg-gray-900 py-16">
+            <div className="lg:w-3/4 mx-auto lg:px-0 px-5">
                 {/* <h1 className="text-4xl font-bold mb-8">Blogs</h1> */}
-                <div className="grid gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5">
                     {blogPosts.map((post) => (
-                        <div key={post.id} className="bg-white p-6 rounded-lg lg:transition-transform transform hover:scale-105" data-aos="zoom-in" data-aos-duration="2000">
+                        <div key={post.id} className="bg-white p-6 rounded lg:transition-transform transform hover:scale-105" data-aos="zoom-in" data-aos-duration="2000">
                             <h2 className="text-2xl font-semibold mb-2">{post.title}</h2>
                             <p className="text-gray-500 mb-2">{post.date}</p>
                             <p className="text-justify">{post.content}</p>

@@ -4,8 +4,8 @@ import img from '../../assets/liton.jpg';
 
 const About = () => {
     return (
-        <div className="bg-gray-900 py-20 px-4">
-            <div className="max-w-5xl mx-auto">
+        <div className="bg-gray-900 py-20">
+            <div className="lg:w-3/4 mx-auto lg:px-0 px-5">
                 <div className="flex flex-col md:flex-row">
                     <div className="md:w-1/3 mb-4 md:mb-0">
                         <img
@@ -45,9 +45,9 @@ const About = () => {
                                 <li className='font-medium'><i className="fa-solid fa-envelope"></i>  litonofficial61@gmail.com
                                 </li>
                                 <li>
-                                    <a href="https://www.facebook.com/profile.php?id=100092320843338"><i className="fab fa-facebook text-2xl mr-3"></i></a>
-                                    <a href=""><i className="fab fa-linkedin text-2xl mr-3"></i></a>
-                                    <a href="https://github.com/liton61"> <i className="fa-brands fa-github text-2xl"></i></a>
+                                    <a href="https://www.facebook.com/profile.php?id=100092320843338" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook text-2xl mr-3"></i></a>
+                                    <a href="https://www.linkedin.com/in/liton-mia-3212522a5" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin text-2xl mr-3"></i></a>
+                                    <a href="https://github.com/liton61" target="_blank" rel="noopener noreferrer"> <i className="fa-brands fa-github text-2xl"></i></a>
                                 </li>
                             </ul>
                         </div>

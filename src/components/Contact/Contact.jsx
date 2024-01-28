@@ -22,10 +22,10 @@ const Contact = () => {
     };
 
     return (
-        <section className="bg-gray-900 text-white py-16 px-4">
-            <div className="max-w-5xl mx-auto">
+        <section className="bg-gray-900 text-white py-16">
+            <div className="lg:w-3/4 mx-auto lg:px-0 px-5">
                 <h2 className="text-3xl font-bold mb-8 border-b-4 border-green-400 w-72 mx-auto text-center pb-2 text-white">Contact Me</h2>
-                <form ref={form} onSubmit={sendEmail} data-aos="zoom-in" data-aos-duration="2000">
+                <form className='shadow-lg shadow-[#040c16] p-10' ref={form} onSubmit={sendEmail} data-aos="zoom-in" data-aos-duration="2000">
                     <div className="mb-4">
                         <label htmlFor="name" className="block mb-2 text-lg">Name</label>
                         <input

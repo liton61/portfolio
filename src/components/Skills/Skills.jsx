@@ -15,14 +15,14 @@ const Skills = () => {
     ];
 
     return (
-        <section className="bg-white py-16 px-4">
-            <div className="max-w-5xl mx-auto">
-                <h2 className="text-3xl font-bold mb-8 border-b-4 border-green-400 w-72 mx-auto text-center">Skills</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <section className="bg-gray-900 py-16">
+            <div className="lg:w-3/4 mx-auto lg:px-0 px-5">
+                <h2 className="text-3xl font-bold mb-8 border-b-4 border-green-400 w-72 mx-auto text-center text-white pb-2">Skills</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
                     {skillsWithLogos.map((skill, index) => (
                         <div
                             key={index}
-                            className="flex items-center justify-center bg-gray-900 text-white py-7 rounded transition-transform transform hover:scale-110 duration-500" data-aos="zoom-in" data-aos-duration="2000"
+                            className="flex items-center justify-center shadow-lg shadow-[#040c16] text-white py-7 rounded transition-transform transform hover:scale-110 duration-500" data-aos="zoom-in" data-aos-duration="2000"
                         >
                             <img
                                 src={skill.logo}

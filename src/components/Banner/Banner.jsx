@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import liton from '../../assets/liton.jpg';
-import resume from '../../assets/Liton-resume.pdf';
+import resume from '../../assets/Liton Mia-Resume.pdf';
 import { Typewriter } from 'react-simple-typewriter';
 
 const Banner = () => {

@@ -19,6 +19,10 @@ const Services = () => {
             image: 'https://i.postimg.cc/J4TkgJYq/mern.png',
         },
         {
+            title: 'Full Stack Development',
+            image: 'https://i.postimg.cc/Bb5pgBZ3/Full-Stack.jpg',
+        },
+        {
             title: 'Deployment and Hosting',
             image: 'https://i.postimg.cc/T32WhBrc/Hosting.png',
         },

@@ -1,9 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react/jsx-no-comment-textnodes */
-import '../Project/ProjectInfo.css'
+import '../Project/ProjectInfo.css';
+import quickShip from '../../assets/quickShip.png';
 import gym from '../../assets/gym.png';
 import restaurant from '../../assets/restaurant.png';
-import jobs from '../../assets/jobs.png';
 import AOS from 'aos';
 import { useEffect } from 'react';
 import 'aos/dist/aos.css';
@@ -22,6 +22,26 @@ const ProjectInfo = () => {
       <h2 className='text-4xl font-bold text-center border-b-4 w-60 mx-auto border-green-400 pt-10 pb-2'>
         Projects
       </h2>
+      <div className='lg:w-3/4 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 py-14'>
+        <div className='image-wrap shadow-lg shadow-[#040c16]' data-aos="fade-up" data-aos-duration="3000">
+          <p className='py-2 text-xl text-center'>Quick Ship</p>
+          <a href="">
+            <img src={quickShip} alt="" />
+
+          </a>
+        </div>
+        <div data-aos="zoom-in-up" className="shadow-lg shadow-[#040c16] p-5 h-[400px] overflow-y-auto">
+          <p className="text-2xl font-semibold">Features & Technologies</p>
+          <p className='text-justify pt-2'>Quick Ship is a parcel booking and delivery web application where you can book and send packages quickly. You can easily choose when your package will be delivered. The website shows you where your package is in real-time. It's a reliable and easy way to send things to people. The website is easy to use and there's always someone to help you if you need it.</p>
+          <p className='text-justify pt-2'><span className='text-green-400 font-semibold'>Booking : </span>Our  booking feature lets you pick how fast you want your package to be delivered. You can choose from regular, express, or super express options. It's like picking how quickly you want something to arrive at its destination. This helps make sure your package gets there on time, no matter how urgent it is. </p>
+          <p className='text-justify pt-2'><span className='text-green-400 font-medium'>Responsive Design : </span>The application is designed to be responsive, ensuring optimal user experience across various devices, including desktops, tablets, and smartphones.Tailwind CSS is utilized to create a visually appealing and intuitive interface that adapts seamlessly to different screen sizes.</p>
+        </div>
+      </div>
+      <div className="lg:w-3/4 mx-auto grid grid-cols-3 py-5 text-center items-center text-pink-500 shadow-lg shadow-[#040c16]">
+        <a href="https://quick-ship-client-lemon.vercel.app/" target="_blank" rel="noopener noreferrer">Live Link</a>
+        <a href="https://github.com/liton61/quickShip-client" target="_blank" rel="noopener noreferrer">Client Side</a>
+        <a href="https://github.com/liton61/quickShip-server" target="_blank" rel="noopener noreferrer">Server Side</a>
+      </div>
       <div className='lg:w-3/4 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 py-14'>
         <div className='image-wrap shadow-lg shadow-[#040c16]' data-aos="fade-up" data-aos-duration="3000">
           <p className='py-2 text-xl text-center'>Vector Gym</p>
@@ -66,28 +86,6 @@ const ProjectInfo = () => {
         <a href="https://restaurant-b565b.web.app/" target="_blank" rel="noopener noreferrer">Live Link</a>
         <a href="https://github.com/liton61/restaurant-client-side" target="_blank" rel="noopener noreferrer">Client Side</a>
         <a href="https://github.com/liton61/restaurant-server-side" target="_blank" rel="noopener noreferrer">Server Side</a>
-      </div>
-      <div className='lg:w-3/4 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 py-14'>
-        <div className='image-wrap shadow-lg shadow-[#040c16]' data-aos="fade-up" data-aos-duration="3000">
-          <p className='py-2 text-xl text-center'>Flex Jobs</p>
-          <a href="">
-            <img src={jobs} alt="" />
-
-          </a>
-        </div>
-        <div data-aos="zoom-in-up" className="shadow-lg shadow-[#040c16] p-5 h-[400px] overflow-y-auto">
-          <p className="text-2xl font-semibold">Features & Technologies</p>
-          <p className='text-justify pt-2'>This online job marketplace web application serves as a platform connecting job seekers with employers, facilitating the process of job application and management of job listings. Built with a focus on user-centric design and efficient management, the application offers a seamless experience for both job seekers and employers.</p>
-          <p className='text-justify pt-2'><span className='text-green-400 font-semibold'>Job Listings : </span>Employers can create, manage, and update job listings, specifying details such as job title, description, requirements, and application deadlines.
-            Job listings are categorized based on industry, location, and job type for easy navigation by job seekers.</p>
-          <p className='text-justify pt-2'><span className='text-green-400 font-semibold'>Bid Requests : </span>Job seekers can submit bid requests for specific job listings, expressing their interest in the position and outlining their qualifications.
-            Employers have visibility into all bid requests and can review each request to evaluate candidate suitability.</p>
-        </div>
-      </div>
-      <div className="lg:w-3/4 mx-auto grid grid-cols-3 py-5 text-center items-center text-pink-500 shadow-lg shadow-[#040c16]">
-        <a href="https://flexjobs-964fa.web.app/" target="_blank" rel="noopener noreferrer">Live Link</a>
-        <a href="https://github.com/liton61/flexJobs-client-side" target="_blank" rel="noopener noreferrer">Client Side</a>
-        <a href="https://github.com/liton61/flexJobs-server-side" target="_blank" rel="noopener noreferrer">Server Side</a>
       </div>
     </div>
   );

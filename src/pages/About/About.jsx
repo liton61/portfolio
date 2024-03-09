@@ -42,7 +42,8 @@ const About = () => {
                             <h2 className="text-xl font-semibold mb-2 ">Contact Me</h2>
                             <ul className="list-disc pl-5 mb-4">
                                 <li className='font-medium'><i className="fa-solid fa-phone"></i>  01738751356</li>
-                                <li className='font-medium'><i className="fa-solid fa-envelope"></i>  litonofficial61@gmail.com
+                                <li className='font-medium'><i className="fa-brands fa-whatsapp"></i>  01732907620</li>
+                                <li className='font-medium'><i className="fa-solid fa-envelope"></i>  litonmia2k1@gmail.com
                                 </li>
                                 <li>
                                     <a href="https://www.facebook.com/profile.php?id=100092320843338" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook text-2xl mr-3"></i></a>
